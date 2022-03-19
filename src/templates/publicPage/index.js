@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss'
 
 //PAGES
-import CardA from '../../pages/home/cardA.js'
+import CardA from '../../pages/home/cardA/cardA.js'
 
 const publicPage = () => {
     return (
