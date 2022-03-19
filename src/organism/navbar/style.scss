@@ -12,11 +12,34 @@
     filter: drop-shadow(0px 25px 15px #272530);
 
     .brand {        
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         background-color: #E70012;
+        padding: 0 20px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            img { 
+                height: 40px;  
+            }
+
+            &:hover {
+                img { 
+                    height: 42px;
+                }
+            }
+        }
     }
 
     .menu {        
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         background-color: #3F3E45;
+        padding-right: 20px;
 
         .clip {
             display: block;
