@@ -4,7 +4,9 @@ import Zelda from '../../../_staticUX/zelda-logo.svg'
 import './style.scss'
 
 
+
 const cardB = () => {
+
     return (
         <div className='btnArea'>
             <div className='car-divisor'>
@@ -12,11 +14,11 @@ const cardB = () => {
             </div>
             
             <div className='buttons'>
-                <Link to='/'>Games de A-Z</Link>
-                <Link to='/'>Meus Games</Link>
-                <Link to='/'>Lista de Desejos</Link>
-                <Link to='/'>Ranking</Link>
-                <Link to='/'>Vídeos</Link>
+                <Link to='/' className='button-home'>Games de A-Z</Link>
+                <div className='button-home' >Meus Games</div>
+                <Link to='/' className='button-home'>Lista de Desejos</Link>
+                <Link to='/' className='button-home'>Ranking</Link>
+                <Link to='/' className='button-home'>Vídeos</Link>
             </div>
         </div>
     );
