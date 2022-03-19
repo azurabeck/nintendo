@@ -50,7 +50,7 @@ const CardA = () => {
                         <div className='bullets'>
                             {
                                 carrosselData.map((bullets , index) => {
-                                    return <span className={slice.f === index ? 'active' : null} 
+                                    return <span key={index} className={slice.f === index ? 'active' : null} 
                                                  onClick={() => getSlice({ f: index , s: index + 1  })}></span>
                                 })
                             }
