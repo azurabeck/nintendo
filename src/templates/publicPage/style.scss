@@ -1,0 +1,19 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "carrossel carrossel top"
+      "carrossel carrossel top"
+      "btn1 btn2 btn3"; 
+    
+    background-color: #2F2E36;
+    width: 100%;
+    height: calc(100% - 50px);
+  }
+  .carrossel { grid-area: carrossel; }
+  .top { grid-area: top; }
+  .btn1 { grid-area: btn1; }
+  .btn2 { grid-area: btn2; }
+  .btn3 { grid-area: btn3; }
