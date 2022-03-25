@@ -1,11 +1,15 @@
 import React from 'react';
+import { useDispatch , useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
+import { getGameList } from '../../../_store/actions/nintendoActions';
 import Zelda from '../../../_staticUX/zelda-logo.svg'
 import './style.scss'
 
+const CardB = () => {
+    const dispatch = useDispatch()
+    const access_token = useSelector((state) => state.nintendo.access_token)
 
 
-const cardB = () => {
 
     return (
         <div className='btnArea'>
@@ -15,7 +19,7 @@ const cardB = () => {
             
             <div className='buttons'>
                 <Link to='/' className='button-home'>Games de A-Z</Link>
-                <div className='button-home' >Meus Games</div>
+                <div className='button-home' onClick={() => dispatch(getGameList(access_token))} >Meus Games</div>
                 <Link to='/' className='button-home'>Lista de Desejos</Link>
                 <Link to='/' className='button-home'>Ranking</Link>
                 <Link to='/' className='button-home'>Vídeos</Link>
@@ -24,4 +28,4 @@ const cardB = () => {
     );
 };
 
-export default cardB;
+export default CardB;
